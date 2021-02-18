@@ -5,7 +5,6 @@ board_set =[]
 row = col = board_size = 4 
 set_num = next_col_x = y_row = x_col = 0
 break_loop = False
-loop_while = True
 
 def check_cell(y, x, board_l):
 	q = Queen(y, x, board_size).all_possible_move()
@@ -18,7 +17,7 @@ def pop_last_set(board):
 	y, x = board.pop()
 	return y, x+1
 
-while loop_while:
+while True:
 	if y_row < row and x_col < col:
 		for y in range(y_row, row):
 			for x in range(x_col, col):
