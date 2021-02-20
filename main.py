@@ -23,7 +23,7 @@ while True:
 			for x in range(x_col, COL):
 				if check_cell(y, x, board_set):					
 					board_set.append((y, x))
-					y_row, x_col = y, x
+					# y_row, x_col = y, x
 					break # breaak X range
 				elif x == col-1 and not check_cell(y, x, board_set):
 					y_row, x_col = pop_last_set(board_set)					
